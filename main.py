@@ -1075,7 +1075,6 @@ Select the Alogrithm you want to test.
 4. Radix Sort
 5. Collect Data
 6. Quit
-7. Continue to Debug main
 """
         print(menuString)
         
@@ -1103,16 +1102,5 @@ Select the Alogrithm you want to test.
                 break
         
         print("Invalid Choice Try Again")
-    
-    #DEBUG MAIN
-    data = generateRandomSortedList(10000)
-
-    if(data == -1):
-        print("OVER FLOW")
-    try: 
-        output = quickSort(data)
-    except RecursionError:
-        print("NO!")
-
     
 
